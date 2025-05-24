@@ -1,0 +1,285 @@
+:root {
+    --background: #252525;
+    --nav-background: #0b1211;
+    --nav-item-bg-hover: rgba(121, 121, 121, 0.13);
+    --navbar-height: 4rem;
+    --text-gray: #252525;
+    --text-white: white;
+    --hover-green: #003e39;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+    background: var(--background);
+}
+    /* for the countainer color*/
+    .cus-w-process {
+      width: 35%;
+    }
+
+    .card {
+      border: none !important;
+
+    }
+
+    .card:hover h2 {
+      color: white !important;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover .border {
+      background:#003e39;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      box-shadow: 0rem 0rem 1rem 0rem #ebebeb;
+      transition: all 0.3s ease-in-out;
+    }
+
+  h1 {
+    text-align: center; 
+    margin-top: 20rem;
+  }
+  .logo {
+    padding: 10px 10px 10px 10px;
+  }
+  /* for the navigation bar */
+  nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: var(--nav-background);
+    z-index: 1;
+  }
+  /*to change the position of the nevigation menu*/
+  .nav__menu {
+    max-width: 100%;
+    margin: 0 auto;
+    padding:0rem;
+    display: flex;
+    align-items: center;
+    height: var(--navbar-height);
+  }
+  .main-content {
+    text-align: center;
+  }
+  
+  .main-content img {
+    max-width: 100%;
+    height:fit-content;
+  }
+  .nav__menu-item {
+    position: relative;
+    list-style-type: none;
+    margin: 100;
+    padding: 50;
+  }
+  
+  .nav__menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    color: var(--text-white);
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+  }
+
+  .nav__submenu-item button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-white);
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav__menu-item:hover > a {
+    background-color: var(--hover-green);
+  }
+
+  
+  .nav__submenu {
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    padding: 0 0.5rem;
+    width: 200px; /* Adjust the width value as desired */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: var(--nav-background);
+  }
+  .nav__submenu-item {
+    position: relative;
+  }
+  
+  .nav__submenu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.3rem;
+    color: var(--text-white);
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav__menu-item:hover .nav__submenu {
+    max-height: 20rem;
+  }
+  
+  .nav__submenu-item:hover a {
+    background-color: var(--hover-green);
+  }
+  /*for the paragraphes */
+  .book .box-container {
+    display: flex;
+    align-items: center;
+}
+
+.book .box-container img {
+  margin-top: 100px !important;
+    width: 33rem; 
+    height: 30rem;  
+}
+/*for the paragraphes */
+.paragraph{
+  margin: 55px;
+}
+.book .box-container .box .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    background-color: #085594; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-left: 10px !important;
+}
+.book .box-container .box .btn:hover {
+    background-color: #041615; 
+}
+
+  .footer {
+    display: flex;
+    margin: 0px;
+    padding: 30px;
+    background-color: #141318;
+    width: 100%;
+  }
+  
+  .footer-section {
+    margin: 20px;
+    flex: 3;
+  }
+  .footer-section :hover{
+    transform: translateX(7px);
+    color: #ffffff;
+    cursor: pointer;
+
+  }
+  
+  .footer-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #c4b9b9;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: #cec7c7; 
+  }
+/*the bus image*/
+.bus-container {
+  position: relative;
+}
+.bus-text {
+  position: absolute;
+  top: 42%; 
+  left: -20%; 
+  transform: translate(-50%, -50%);
+  line-height: 1;
+  text-transform: uppercase;
+  color: var(--text-white);
+  font-size: 4.5vw;
+  font-weight: bold;
+  text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.8);
+  margin-left: 60px;  
+}
+.bus-image {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+   margin-top: -30px;
+} 
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem; /* Adjust the gap value as needed */
+  width: 100%;
+  max-width: 1500px;
+}
+
+.box img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.box img:hover {
+  transform: scale(1.025);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px; /* Adjust the bottom margin to create space between the images */
+}
+
+.box img {
+  width: 100px; /* Adjust the width as per your needs */
+  margin-right: 20px; /* Adjust the spacing between the image and content */
+}
+
+.box .content {
+  flex-grow: 1;
+}
+
+.heading-title {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+.heading {
+  margin-top: 50px;
+  margin-bottom: -80px;
+}

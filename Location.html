@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Locations</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif; /* Change the font to Arial */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.location-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+}
+
+.location-item {
+  width: 48%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.location-image {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.location-image img {
+  width: 100%;
+  height: auto;
+}
+
+.location-details {
+  padding: 15px;
+  position: relative;
+}
+
+.location-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-style: arial;
+}
+
+.location-address {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.location-phone {
+  font-size: 16px;
+}
+
+.location-phone::before {
+  content: "Phone: ";
+  font-weight: bold;
+}
+
+.location-address-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8f9fa;;
+  padding: 15px;
+}
+
+
+/* Additional CSS for second set of location items */
+.location-list.second {
+  margin-top: 20px;
+}
+
+.location-list.second .location-item {
+  background-color: #f8f9fa;
+}
+
+.location-list.second .location-name {
+  color: Black;
+}
+    </style>
+</head>
+<body>
+    <ul class="location-list">
+        <li class="location-item">
+            <div class="location-image">
+                <img src="cent.jpg" alt="Location 1">
+            </div>
+            <div class="location-details">
+                <h2 class="location-name">Addis Abeba</h2>
+                <p class="location-address">Bole, Century Mall</p>
+                <p class="location-phone"> +251955512166 / +251945344243</p>
+            </div>
+        </li>
+        <li class="location-item">
+            <div class="location-image">
+                <img src="Atin.jpg" alt="Location 2">
+            </div>
+            <div class="location-details">
+                <h2 class="location-name">Hawassa</h2>
+                <p class="location-address">Central Grand Mall</p>
+                <p class="location-phone"> +2519-455-1212 / +2519-576-3643</p>
+            </div>
+        </li>
+        <li class="location-item">
+            <div class="location-image">
+                <img src="Nakvy.jpg" alt="Location 3">
+            </div>
+            <div class="location-details">
+                <h2 class="location-name">Bahirdar</h2>
+                <p class="location-address"> Arround Nakvy Hotel </p>
+                <p class="location-phone"> +251-555-9090 / +251-755-4523</p>
+            </div>
+        </li>
+        <li class="location-item">
+            <div class="location-image">
+                <img src="Harar.webp" alt="Location 4">
+            </div>
+            <div class="location-details">
+                <h2 class="location-name">Harar</h2>
+                <p class="location-address">Shenkor</p>
+                <p class="location-phone"> +251-325-4545 / +251-675-676</p>
+            </div>
+        </li>
+    </ul>
+    <ul class="location-list second">
+        <li class="location-item">
+            <div class="location-image">
+                <img src="dir.jpg" alt="Location 5">
+            </div>
+            <div class="location-details">
+                <h2 class="location-name">Dire Dawa</h2>
+                <p class="location-address">Konel</p>
+                <p class="location-phone"> +251-943-7878 / +251-523-5686</p>
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
