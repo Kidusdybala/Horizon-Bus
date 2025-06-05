@@ -2,10 +2,10 @@
 
 *Modern Bus Booking and Real-time Tracking Solution*
 
-![Last Commit](https://img.shields.io/github/last-commit/username/HORIZON-BUS-SYSTEM)
-![Language Count](https://img.shields.io/github/languages/count/username/HORIZON-BUS-SYSTEM)
-![Top Language](https://img.shields.io/github/languages/top/username/HORIZON-BUS-SYSTEM)
-![License](https://img.shields.io/github/license/username/HORIZON-BUS-SYSTEM)
+![Last Commit](https://img.shields.io/github/last-commit/kidusdybala/HORIZON-BUS-SYSTEM)
+![Language Count](https://img.shields.io/github/languages/count/kidusdybala/HORIZON-BUS-SYSTEM)
+![Top Language](https://img.shields.io/github/languages/top/kidusdybala/HORIZON-BUS-SYSTEM)
+![License](https://img.shields.io/github/license/kidusdybala/HORIZON-BUS-SYSTEM)
 
 ---
 
@@ -79,7 +79,7 @@ mysql --version
 apache2 -v
 ```
 
-Installation Guide
+## Installation Guide
 1. Clone the repository
 
    ```bash
@@ -108,7 +108,7 @@ define('DB_PASSWORD', 'securepassword');
 define('DB_NAME', 'horizon_bus');
 ?>
 ```
-Running the Application
+## Running the Application
 Development
 ```bash
 php -S localhost:8000
@@ -129,7 +129,7 @@ curl -X POST http://localhost:8000/api/bookings \
   -H "Content-Type: application/json" \
   -d '{"user_id":123,"bus_id":456,"seats":["A1","A2"],"payment_method":"mpesa"}'
 ```
-Contributing
+## Contributing
 Fork the repository
 
 Create feature branch:
@@ -144,7 +144,7 @@ Push to branch
 ```bash
 git push origin feature/new-feature
 ```
-License
+## License
 MIT License - See LICENSE for details.
 ```bash
 # View license
