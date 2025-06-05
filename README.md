@@ -1,12 +1,5 @@
 # HORIZON-BUS-SYSTEM
 
-*Modern Bus Booking and Real-time Tracking Solution*
-
-![Last Commit](https://img.shields.io/github/last-commit/kidusdybala/HORIZON-BUS-SYSTEM)
-![Language Count](https://img.shields.io/github/languages/count/kidusdybala/HORIZON-BUS-SYSTEM)
-![Top Language](https://img.shields.io/github/languages/top/kidusdybala/HORIZON-BUS-SYSTEM)
-![License](https://img.shields.io/github/license/kidusdybala/HORIZON-BUS-SYSTEM)
-
 ---
 
 ## Built With
